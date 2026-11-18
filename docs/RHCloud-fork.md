@@ -11,6 +11,8 @@
 | 机器节点一键安装（MachineController） | cedar2025/xboard-node | RHCloud1/Xboard-Node（含 release 二进制） |
 | Xboard-Node 依赖的内核 fork | cedar2025/sing-box、cedar2025/Xray-core | RHCloud1/sing-box、RHCloud1/Xray-core |
 
+Xboard-Node 的 release：v1.0.2、v1.10–v1.13 是原作者二进制的原样存档（sha256 与原版一致，但其中 xbctl 的升级地址仍指向 cedar2025）；`v1.13-rhcloud1` 由本 fork 的 CI 从 v1.13 加地址修改编译，设为 Latest，安装脚本默认装它。
+
 Docker 镜像由 `.github/workflows/docker-publish.yml` 在 push 到 master 时构建（amd64 + arm64），按 `latest`、`new` 和短 commit 打标签。
 
 Xboard-Node 的 `go.mod` 仍 replace 到 `github.com/cedar2025/sing-box` 和 `github.com/cedar2025/Xray-core`，这两个版本已被 proxy.golang.org 缓存；若缓存不可用，把 replace 改为 RHCloud1 下同名 fork 的同一 commit 并 `go mod tidy`。
