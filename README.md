@@ -24,7 +24,7 @@ Xboard is a modern panel system built on Laravel 11, focusing on providing a cle
 ## 🚀 Quick Start
 
 ```bash
-git clone -b compose --depth 1 https://github.com/cedar2025/Xboard && \
+git clone -b compose --depth 1 https://github.com/RHCloud1/Xboard && \
 cd Xboard && \
 docker compose run -it --rm \
     -e ENABLE_SQLITE=true \
@@ -46,8 +46,8 @@ docker compose up -d
 
 | Tag | Branch | Audience |
 |---|---|---|
-| `ghcr.io/cedar2025/xboard:latest` | `master` | Production users — only stable releases land here |
-| `ghcr.io/cedar2025/xboard:new-dev` | `new-dev` | Early adopters / testing — newest features, may be unstable |
+| `ghcr.io/rhcloud1/xboard:latest` | `master` | Production users — only stable releases land here |
+| `ghcr.io/rhcloud1/xboard:new-dev` | `new-dev` | Early adopters / testing — newest features, may be unstable |
 
 All development happens on `new-dev`; once verified it is fast-forwarded into `master`, which automatically publishes `:latest`.
 
