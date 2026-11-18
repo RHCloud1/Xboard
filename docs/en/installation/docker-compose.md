@@ -19,7 +19,7 @@ systemctl start docker
 
 1. Clone the `compose` branch (it ships `compose.sample.yaml` and the other `compose.*.sample.yaml` variants):
    ```bash
-   git clone -b compose --depth 1 https://github.com/cedar2025/Xboard
+   git clone -b compose --depth 1 https://github.com/RHCloud1/Xboard
    cd Xboard
    cp compose.sample.yaml compose.yaml
    ```
